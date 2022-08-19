@@ -1,0 +1,18 @@
+<div class="home-banner">
+  <h1><span id="banner-typed-text"></span></h1>
+    <h1 class="banner-arrow">⌵</h1>
+</div>
+
+<p><span data-controller="typed-js"></span></p>
+
+<div class="container">
+  <div class="row cards">
+    <% @lists.each do |list| %>
+      <div class="col-4-sm">
+          <h3><%= link_to list.name, list_path(list)%></h3>
+        </div>
+        <% end %>
+    </div>
+</div>
+
+
